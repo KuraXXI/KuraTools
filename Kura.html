@@ -232,6 +232,26 @@
             color: var(--accent-color);
         }
 
+        .app-preview {
+            width: 100%;
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
+        }
+
+        .app-preview img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .app-preview:hover img {
+            transform: scale(1.02);
+        }
+
         .feature-list {
             margin: 1.5rem 0;
             padding-left: 1.5rem;
@@ -436,6 +456,11 @@
             </button>
             <h2>KuraTools</h2>
             <p>A small tool for opening Steam, closing it, and restarting it with simple one-click operations.</p>
+            
+            <div class="app-preview">
+                <img src="https://github.com/KuraXXI/KuraTools/raw/main/KuraTools.png" alt="KuraTools Preview" onerror="this.style.display='none'">
+            </div>
+            
             <button class="download-btn" data-file="KuraToolsSetup.exe">
                 <i class="fas fa-download"></i> Download v1.2
             </button>
@@ -450,6 +475,11 @@
             </button>
             <h2>Kura Manager</h2>
             <p>Manage Steam to delete games from your Steam library.</p>
+            
+            <div class="app-preview">
+                <img src="https://github.com/KuraXXI/KuraTools/raw/main/Kura%20Manager.png" alt="Kura Manager Preview" onerror="this.style.display='none'">
+            </div>
+            
             <button class="download-btn" data-file="KuraManagerSetup.exe">
                 <i class="fas fa-download"></i> Download v1.0
             </button>
@@ -464,6 +494,10 @@
             </button>
             <h2>Kura Advanced Tool</h2>
             <p>A tool with a floating logo where you can extract ZIP files manually or by dragging ZIP files onto the logo (they must contain manifest and LUA files only).</p>
+            
+            <div class="app-preview">
+                <img src="https://github.com/KuraXXI/KuraTools/raw/main/Kura%20Advenced%20Tool.png" alt="Kura Advanced Tool Preview" onerror="this.style.display='none'">
+            </div>
             
             <ul class="feature-list">
                 <li>Right-click the logo for additional options including restarting Steam, changing themes, and exiting the application</li>
@@ -561,13 +595,13 @@
                             
                             // Updated GitHub file links
                             if (fileName === 'KuraToolsSetup.exe') {
-                                link.href = 'https://github.com/KuraXXI/KuraTools/raw/main/download/KuraToolsSetup.exe';
+                                link.href = 'https://raw.githubusercontent.com/KuraXXI/KuraTools/main/KuraToolsSetup.exe';
                             } 
                             else if (fileName === 'KuraManagerSetup.exe') {
-                                link.href = 'https://github.com/KuraXXI/KuraTools/raw/main/download/KuraManagerSetup.exe';
+                                link.href = 'https://raw.githubusercontent.com/KuraXXI/KuraTools/main/KuraManagerSetup.exe';
                             }
                             else if (fileName === 'KuraAdvancedToolSetup.exe') {
-                                link.href = 'https://github.com/KuraXXI/KuraTools/raw/main/download/KuraAdvancedToolSetup.exe';
+                                link.href = 'https://raw.githubusercontent.com/KuraXXI/KuraTools/main/KuraAdvancedToolSetup.exe';
                             }
                             
                             link.download = fileName;
