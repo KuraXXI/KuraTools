@@ -1,4 +1,3 @@
-(https://github.com/user-attachments/files/22435550/ReadMe.txt)
 IMPORTANT NOTICE FOR LEGIT USERS — READ IS IMPORTANT
 
 This software is illegal to use, is not because its a virus. No its not, its safe you can scan it, but its because it can violate steam software/service terms.
